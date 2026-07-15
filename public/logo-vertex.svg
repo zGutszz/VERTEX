@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" role="img" aria-label="Vertex">
+  <g transform="translate(12 10)">
+    <path fill="#071C3D" d="M0 2h25l28 69L42 101 18 55z"/>
+    <path fill="#064E9D" d="M29 2h27l23 54-18 45L45 61z"/>
+    <path fill="#38A4F5" d="M63 2h31l-35 99-14-35z"/>
+  </g>
+  <text x="128" y="66" fill="#071C3D" font-family="Montserrat,Arial,sans-serif" font-size="47" font-weight="800" letter-spacing="7">VERTEX</text>
+  <text x="131" y="91" fill="#64748B" font-family="Inter,Arial,sans-serif" font-size="10" font-weight="600" letter-spacing="4">DIGITAL SOLUTIONS</text>
+</svg>

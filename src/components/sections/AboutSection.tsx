@@ -1,0 +1,7 @@
+import { ArrowUpRight, Layers3, Lightbulb, Route, Sparkles } from 'lucide-react'
+import { Container } from '../common/Container'
+import { Reveal } from '../common/Reveal'
+import { SectionHeading } from '../common/SectionHeading'
+import { VertexMark } from '../visual/VertexMark'
+
+export function AboutSection(){return <section id="sobre" className="section about"><Container><div className="about-grid"><div><SectionHeading badge="Sobre a Vertex" title="Digital com estratégia. Design com propósito." text="Ajudamos empresas a organizar sua presença digital e transformar boas ideias em experiências profissionais, claras e relevantes."/><Reveal><p className="body-large">Não acreditamos em fórmulas prontas. Cada projeto começa com uma leitura cuidadosa do negócio para conectar tecnologia, marketing e comunicação a objetivos reais.</p><a className="text-link" href="#processo">Conheça nosso processo <ArrowUpRight/></a></Reveal></div><Reveal className="about-visual"><div className="about-core"><VertexMark/><span>V</span><small>Estratégia no centro</small></div>{[[Lightbulb,'Clareza','Decisões bem fundamentadas'],[Route,'Direção','Prioridades organizadas'],[Layers3,'Consistência','Canais que conversam entre si'],[Sparkles,'Evolução','Próximos passos definidos']].map(([Icon,title,text],i)=><div className={`orbit-card orbit-card-${i}`} key={title as string}><Icon/><div><b>{title as string}</b><span>{text as string}</span></div></div>)}</Reveal></div></Container></section>}

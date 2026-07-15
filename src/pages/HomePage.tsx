@@ -1,0 +1,17 @@
+import { useEffect, useState } from 'react'
+import { AboutSection } from '../components/sections/AboutSection'
+import { AudienceSection } from '../components/sections/AudienceSection'
+import { BenefitsSection } from '../components/sections/BenefitsSection'
+import { ContactSection } from '../components/sections/ContactSection'
+import { FinalCtaSection } from '../components/sections/FinalCtaSection'
+import { HeroSection } from '../components/sections/HeroSection'
+import { ProcessSection } from '../components/sections/ProcessSection'
+import { ProjectsSection } from '../components/sections/ProjectsSection'
+import { ServicesSection } from '../components/sections/ServicesSection'
+import { TrustBarSection } from '../components/sections/TrustBarSection'
+import { Footer } from '../components/layout/Footer'
+import { Header } from '../components/layout/Header'
+import { WhatsAppFloatingButton } from '../components/layout/WhatsAppFloatingButton'
+import { VertexMark } from '../components/visual/VertexMark'
+
+export function HomePage(){const[loading,setLoading]=useState(true);useEffect(()=>{const timer=setTimeout(()=>setLoading(false),760);return()=>clearTimeout(timer)},[]);return <>{loading&&<div className="loader"><VertexMark/><b>VERTEX</b><span><i/></span></div>}<Header/><main><HeroSection/><TrustBarSection/><AboutSection/><ServicesSection/><BenefitsSection/><ProcessSection/><ProjectsSection/><AudienceSection/><ContactSection/><FinalCtaSection/></main><Footer/><WhatsAppFloatingButton/></>}

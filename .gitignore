@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Production build
+dist/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# TypeScript and Vite cache
+*.tsbuildinfo
+.vite/

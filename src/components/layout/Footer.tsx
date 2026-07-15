@@ -1,0 +1,7 @@
+import { Instagram, Mail, MessageCircle } from 'lucide-react'
+import { companyData, navItems, services } from '../../data/siteData'
+import { whatsappUrl } from '../../utils/whatsapp'
+import { Container } from '../common/Container'
+import { VertexMark } from '../visual/VertexMark'
+
+export function Footer(){return <footer><Container><div className="footer-grid"><div className="footer-about"><a className="brand brand-light" href="#inicio"><VertexMark/><span><b>Vertex</b><small>DIGITAL SOLUTIONS</small></span></a><p>A Vertex desenvolve soluções digitais para empresas que desejam crescer, fortalecer sua marca e construir uma presença profissional na internet.</p><strong>{companyData.slogan}</strong></div><div><h3>Navegação</h3>{navItems.map(n=><a key={n.href} href={n.href}>{n.label}</a>)}</div><div><h3>Serviços</h3>{services.map(s=><a key={s.kicker} href="#servicos">{s.kicker}</a>)}</div><div><h3>Contato</h3><a href={whatsappUrl()} target="_blank" rel="noopener noreferrer"><MessageCircle/> {companyData.whatsappDisplay}</a><a href="https://instagram.com/vertex.df" target="_blank" rel="noopener noreferrer"><Instagram/> {companyData.instagram}</a><a href={`mailto:${companyData.email}`}><Mail/> {companyData.email}</a></div></div><div className="footer-bottom"><span>© 2026 Vertex. Todos os direitos reservados.</span><span>Construindo presença digital para empresas que querem evoluir.</span></div></Container></footer>}
